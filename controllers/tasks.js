@@ -3,7 +3,7 @@ const getAllTasks = (req, res) => {
 };
 
 
-module.export = {
+module.exports = {
   getAllTasks,
 }
 
