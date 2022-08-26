@@ -20,8 +20,12 @@ const createTask = async (req, res) => {
 };
 
 
-const getTask = (req, res) => {
-  res.json({id:req.params.id});
+const getTask = async (req, res) => {
+try {
+  
+} catch (error) {
+  
+}
 };
 
 
