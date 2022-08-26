@@ -21,11 +21,11 @@ const createTask = async (req, res) => {
 
 
 const getTask = async (req, res) => {
-try {
-  
-} catch (error) {
-  
-}
+  try {
+
+   } catch (error) {
+    res.status(500).json({ msg: error });
+   }
 };
 
 
