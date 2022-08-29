@@ -46,6 +46,11 @@ const deleteTask = async (req, res) => {
     const { id: taskID } = req.params;
     const task = await Task.findOneAndDelete({ _id: taskID });
     
+    if(!task) {
+      return res.status(404).json({ msg: `Task with id ${taskID} not found` });
+    }
+    res.status(200).json({ task });
+    
   } catch (error) {
     
   }
