@@ -50,9 +50,9 @@ const deleteTask = async (req, res) => {
       return res.status(404).json({ msg: `Task with id ${taskID} not found` });
     }
     res.status(200).json({ task });
-    
+
   } catch (error) {
-    
+    res.status(500).json({ msg: error });
   }
 };
 
