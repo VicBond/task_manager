@@ -43,6 +43,8 @@ const updateTask = (req, res) => {
 
 const deleteTask = async (req, res) => {
   try {
+    const { id: taskID } = req.params;
+    const task = await Task.findOneAndDelete({ _id: taskID });
     
   } catch (error) {
     
