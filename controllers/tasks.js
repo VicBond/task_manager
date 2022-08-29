@@ -41,8 +41,12 @@ const updateTask = (req, res) => {
 };
 
 
-const deleteTask = (req, res) => {
-  res.send('delete task');
+const deleteTask = async (req, res) => {
+  try {
+    
+  } catch (error) {
+    
+  }
 };
 
 
