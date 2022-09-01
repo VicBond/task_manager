@@ -38,7 +38,9 @@ const getTask = async (req, res) => {
 
 const updateTask = async (req, res) => {
   try {
-    
+    const { id: taskID } = req.params;
+
+    res.status(200).json({ id: taskID, data: req.data });
   } catch (error) {
     
   }
